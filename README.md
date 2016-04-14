@@ -23,5 +23,6 @@ post with this model:
   "color": "colorOfCar",
   "AC": true
 }
-`
+`  
+
 delete and patch with id number: http://localhost:3000/api/cars/[id#]
