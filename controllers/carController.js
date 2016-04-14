@@ -27,11 +27,11 @@ var carController = function(Car) {
                 res.status(500).send(err);
             else {
 
-                var returnCars= [];
+                var returnCars = [];
                 cars.forEach(function(element, index, array){
                     var newCar = element.toJSON();
                     newCar.links = {};
-                    neaCar.links.self = 'http://' + req.headers.host + '/api/cars/' + newCar._id;
+                    newCar.links.self = 'http://' + req.headers.host + '/api/cars/' + newCar._id;
                     returnCars.push(newCar);
                 });
                 res.json(returnCars);

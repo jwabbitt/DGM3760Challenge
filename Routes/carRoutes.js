@@ -10,7 +10,7 @@ var routes = function(Car){
         .get(carController.get);
 
     carRouter.use('/:carId', function(req,res,next){
-        car.findById(req.params.carId, function(err, car){
+        Car.findById(req.params.carId, function(err, car){
             if(err)
                 res.status(500).send(err);
             else if(car)
@@ -30,7 +30,7 @@ var routes = function(Car){
             var returnCar = req.car.toJSON();
 
             returnCar.links = {};
-            var newLink = 'http://' + req.headers.host + '/api/cars/?model=' + returnCar.genre;
+            var newLink = 'http://' + req.headers.host + '/api/cars/?model=' + returnCar.model;
             returnCar.links.FilterByThisModel = newLink.replace(' ', '%20');
             res.json(returnCar);
 
