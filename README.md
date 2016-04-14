@@ -16,13 +16,13 @@ Use Postman to get and post: http://localhost:3000/api/cars
 
 post with this model:
 
-`
+```
 {
   "make": "MakeOfCar",
   "model": "ModelOfCar",
   "color": "colorOfCar",
   "AC": true
 }
-`  
+```  
 
 delete and patch with id number: http://localhost:3000/api/cars/[id#]
