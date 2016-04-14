@@ -2,6 +2,13 @@ Cars app
 
 Description:  Simple database of cars by make, model, color, etc.
 
+Requirements:  
+
+1. Node: download at https://nodejs.org/en/download/ 
+    or with homebrew, update brew `brew update` and install node `brew install node`
+2. MongoDB: download at https://www.mongodb.org/downloads#production
+    or with homebrew, update brew `brew update` and install mongodb `brew install mongodb`
+
 Usage:
 
 `npm install`  
